@@ -1,0 +1,2 @@
+ccache /usr/local/src/llvm/build/bin/llvm-ar qc libsoc__x86__ia32.a  CMakeFiles/soc__x86__ia32.dir/soc.c.obj
+ccache /usr/local/src/llvm/build/bin/llvm-ranlib libsoc__x86__ia32.a

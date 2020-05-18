@@ -1,0 +1,2 @@
+ccache /usr/local/src/llvm/build/bin/llvm-ar qc app/libapp.a  CMakeFiles/app.dir/src/main.c.obj
+ccache /usr/local/src/llvm/build/bin/llvm-ranlib app/libapp.a

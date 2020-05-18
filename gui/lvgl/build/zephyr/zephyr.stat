@@ -1,0 +1,66 @@
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           Intel 80386
+  Version:                           0x1
+  Entry point address:               0x100000
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          1147988 (bytes into file)
+  Flags:                             0x0
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         3
+  Size of section headers:           40 (bytes)
+  Number of section headers:         26
+  Section header string table index: 25
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] text              PROGBITS        00100000 001000 023000 00  AX  0   0 16
+  [ 2] devconfig         PROGBITS        00123000 024000 000084 00  WA  0   0  4
+  [ 3] log_const_section PROGBITS        00123084 024084 000020 00   A  0   0  4
+  [ 4] log_backends_sect PROGBITS        001230a4 0240a4 000010 00   A  0   0  4
+  [ 5] rodata            PROGBITS        001230b4 0240b4 00219c 00   A  0   0  4
+  [ 6] bss               NOBITS          00126000 026250 01aef0 00  WA  0   0 4096
+  [ 7] noinit            NOBITS          00140ef0 026250 002110 00  WA  0   0  4
+  [ 8] datas             PROGBITS        00143000 026250 0003b4 00  WA  0   0  4
+  [ 9] initlevel         PROGBITS        001433b4 026604 000084 00  WA  0   0  4
+  [10] _k_mem_pool_area  PROGBITS        00143438 026688 000024 00  WA  0   0  4
+  [11] _k_sem_area       PROGBITS        0014345c 0266ac 000018 00  WA  0   0  4
+  [12] _k_mutex_area     PROGBITS        00143474 0266c4 00001c 00  WA  0   0  4
+  [13] .comment          PROGBITS        00000000 0266e0 00002d 01  MS  0   0  1
+  [14] .llvm_bc          PROGBITS        00000000 02670d 0029b8 00      0   0  1
+  [15] .debug_info       PROGBITS        00000000 0290c5 04bf4b 00      0   0  1
+  [16] .debug_abbrev     PROGBITS        00000000 075010 0094cf 00      0   0  1
+  [17] .debug_line       PROGBITS        00000000 07e4df 0319d2 00      0   0  1
+  [18] .debug_frame      PROGBITS        00000000 0afeb4 010618 00      0   0  4
+  [19] .debug_str        PROGBITS        00000000 0c04cc 0090ef 01  MS  0   0  1
+  [20] .debug_loc        PROGBITS        00000000 0c95bb 000085 00      0   0  1
+  [21] .debug_macinfo    PROGBITS        00000000 0c9640 000052 00      0   0  1
+  [22] .debug_ranges     PROGBITS        00000000 0c9692 0045e8 00      0   0  1
+  [23] .symtab           SYMTAB          00000000 0cdc7c 044d80 10     24 16913  4
+  [24] .strtab           STRTAB          00000000 1129fc 005940 00      0   0  1
+  [25] .shstrtab         STRTAB          00000000 11833c 000118 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  p (processor specific)
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  LOAD           0x001000 0x00100000 0x00100000 0x25250 0x43000 RWE 0x1000
+  LOAD           0x026250 0x00143000 0x00143000 0x00490 0x00490 RW  0x4
+  GNU_STACK      0x000000 0x00000000 0x00000000 0x00000 0x00000 RWE 0x10
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     text devconfig log_const_sections log_backends_sections rodata bss noinit 
+   01     datas initlevel _k_mem_pool_area _k_sem_area _k_mutex_area 
+   02     

@@ -1,0 +1,65 @@
+Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+clang version 9.0.0 (tags/RELEASE_900/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/local/src/llvm/build/bin
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem__usr_local_src_llvm_build_lib_clang_9_0_0_include__isystem__usr_lib_gcc_x86_64_linux_gnu_7_5_0_include_fixed__Wl___unresolved_symbols_ignore_in_object_files__no_pie failed with the following output:
+Change Dir: /home/lt/zephyrproject2.1/zephyr/samples/gui/lvgl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f7626/fast && /usr/bin/make -f CMakeFiles/cmTC_f7626.dir/build.make CMakeFiles/cmTC_f7626.dir/build
+make[1]: Entering directory '/home/lt/zephyrproject2.1/zephyr/samples/gui/lvgl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f7626.dir/src.c.obj
+/usr/local/src/llvm/build/bin/clang --target=i686-pc-none-elf   -Dcheck_C__nostartfiles__nostdlib__isystem__usr_local_src_llvm_build_lib_clang_9_0_0_include__isystem__usr_lib_gcc_x86_64_linux_gnu_7_5_0_include_fixed__Wl___unresolved_symbols_ignore_in_object_files__no_pie -nostartfiles -nostdlib -isystem /usr/local/src/llvm/build/lib/clang/9.0.0/include -isystem /usr/lib/gcc/x86_64-linux-gnu/7.5.0/include-fixed -Wl,--unresolved-symbols=ignore-in-object-files -no-pie   -o CMakeFiles/cmTC_f7626.dir/src.c.obj   -c /home/lt/zephyrproject2.1/zephyr/samples/gui/lvgl/build/CMakeFiles/CMakeTmp/src.c
+clang-9: warning: -Wl,--unresolved-symbols=ignore-in-object-files: 'linker' input unused [-Wunused-command-line-argument]
+clang-9: warning: argument unused during compilation: '-nostartfiles' [-Wunused-command-line-argument]
+clang-9: warning: argument unused during compilation: '-no-pie' [-Wunused-command-line-argument]
+Linking C executable cmTC_f7626
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7626.dir/link.txt --verbose=1
+/usr/local/src/llvm/build/bin/clang --target=i686-pc-none-elf  -Dcheck_C__nostartfiles__nostdlib__isystem__usr_local_src_llvm_build_lib_clang_9_0_0_include__isystem__usr_lib_gcc_x86_64_linux_gnu_7_5_0_include_fixed__Wl___unresolved_symbols_ignore_in_object_files__no_pie -nostartfiles -nostdlib -isystem /usr/local/src/llvm/build/lib/clang/9.0.0/include -isystem /usr/lib/gcc/x86_64-linux-gnu/7.5.0/include-fixed -Wl,--unresolved-symbols=ignore-in-object-files -no-pie    CMakeFiles/cmTC_f7626.dir/src.c.obj  -o cmTC_f7626 
+gcc: error: unrecognized command line option '-nopie'; did you mean '-no-pie'?
+clang-9: error: linker (via gcc) command failed with exit code 1 (use -v to see invocation)
+CMakeFiles/cmTC_f7626.dir/build.make:86: recipe for target 'cmTC_f7626' failed
+make[1]: *** [cmTC_f7626] Error 1
+make[1]: Leaving directory '/home/lt/zephyrproject2.1/zephyr/samples/gui/lvgl/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_f7626/fast' failed
+make: *** [cmTC_f7626/fast] Error 2
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_fmacro_prefix_map__home_lt_zephyrproject2_1_zephyr_samples_gui_lvgl_CMAKE_SOURCE_DIR_C__nostartfiles__nostdlib__isystem__usr_local_src_llvm_build_lib_clang_9_0_0_include__isystem__usr_lib_gcc_x86_64_linux_gnu_7_5_0_include_fixed__Wl___unresolved_symbols_ignore_in_object_files failed with the following output:
+Change Dir: /home/lt/zephyrproject2.1/zephyr/samples/gui/lvgl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f0716/fast && /usr/bin/make -f CMakeFiles/cmTC_f0716.dir/build.make CMakeFiles/cmTC_f0716.dir/build
+make[1]: Entering directory '/home/lt/zephyrproject2.1/zephyr/samples/gui/lvgl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f0716.dir/src.c.obj
+/usr/local/src/llvm/build/bin/clang --target=i686-pc-none-elf   -Dcheck_fmacro_prefix_map__home_lt_zephyrproject2_1_zephyr_samples_gui_lvgl_CMAKE_SOURCE_DIR_C__nostartfiles__nostdlib__isystem__usr_local_src_llvm_build_lib_clang_9_0_0_include__isystem__usr_lib_gcc_x86_64_linux_gnu_7_5_0_include_fixed__Wl___unresolved_symbols_ignore_in_object_files -nostartfiles -nostdlib -isystem /usr/local/src/llvm/build/lib/clang/9.0.0/include -isystem /usr/lib/gcc/x86_64-linux-gnu/7.5.0/include-fixed -Wl,--unresolved-symbols=ignore-in-object-files   -fmacro-prefix-map=/home/lt/zephyrproject2.1/zephyr/samples/gui/lvgl=CMAKE_SOURCE_DIR -o CMakeFiles/cmTC_f0716.dir/src.c.obj   -c /home/lt/zephyrproject2.1/zephyr/samples/gui/lvgl/build/CMakeFiles/CMakeTmp/src.c
+clang-9: error: unknown argument: '-fmacro-prefix-map=/home/lt/zephyrproject2.1/zephyr/samples/gui/lvgl=CMAKE_SOURCE_DIR'
+clang-9: warning: -Wl,--unresolved-symbols=ignore-in-object-files: 'linker' input unused [-Wunused-command-line-argument]
+CMakeFiles/cmTC_f0716.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_f0716.dir/src.c.obj' failed
+make[1]: *** [CMakeFiles/cmTC_f0716.dir/src.c.obj] Error 1
+make[1]: Leaving directory '/home/lt/zephyrproject2.1/zephyr/samples/gui/lvgl/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_f0716/fast' failed
+make: *** [cmTC_f0716/fast] Error 2
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_fmacro_prefix_map__home_lt_zephyrproject2_1_zephyr_ZEPHYR_BASE_C__nostartfiles__nostdlib__isystem__usr_local_src_llvm_build_lib_clang_9_0_0_include__isystem__usr_lib_gcc_x86_64_linux_gnu_7_5_0_include_fixed__Wl___unresolved_symbols_ignore_in_object_files failed with the following output:
+Change Dir: /home/lt/zephyrproject2.1/zephyr/samples/gui/lvgl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3c1e9/fast && /usr/bin/make -f CMakeFiles/cmTC_3c1e9.dir/build.make CMakeFiles/cmTC_3c1e9.dir/build
+make[1]: Entering directory '/home/lt/zephyrproject2.1/zephyr/samples/gui/lvgl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3c1e9.dir/src.c.obj
+/usr/local/src/llvm/build/bin/clang --target=i686-pc-none-elf   -Dcheck_fmacro_prefix_map__home_lt_zephyrproject2_1_zephyr_ZEPHYR_BASE_C__nostartfiles__nostdlib__isystem__usr_local_src_llvm_build_lib_clang_9_0_0_include__isystem__usr_lib_gcc_x86_64_linux_gnu_7_5_0_include_fixed__Wl___unresolved_symbols_ignore_in_object_files -nostartfiles -nostdlib -isystem /usr/local/src/llvm/build/lib/clang/9.0.0/include -isystem /usr/lib/gcc/x86_64-linux-gnu/7.5.0/include-fixed -Wl,--unresolved-symbols=ignore-in-object-files   -fmacro-prefix-map=/home/lt/zephyrproject2.1/zephyr=ZEPHYR_BASE -o CMakeFiles/cmTC_3c1e9.dir/src.c.obj   -c /home/lt/zephyrproject2.1/zephyr/samples/gui/lvgl/build/CMakeFiles/CMakeTmp/src.c
+clang-9: error: unknown argument: '-fmacro-prefix-map=/home/lt/zephyrproject2.1/zephyr=ZEPHYR_BASE'
+clang-9: warning: -Wl,--unresolved-symbols=ignore-in-object-files: 'linker' input unused [-Wunused-command-line-argument]
+CMakeFiles/cmTC_3c1e9.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_3c1e9.dir/src.c.obj' failed
+make[1]: *** [CMakeFiles/cmTC_3c1e9.dir/src.c.obj] Error 1
+make[1]: Leaving directory '/home/lt/zephyrproject2.1/zephyr/samples/gui/lvgl/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_3c1e9/fast' failed
+make: *** [cmTC_3c1e9/fast] Error 2
+
+
+Source file was:
+int main(void) { return 0; }

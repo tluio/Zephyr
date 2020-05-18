@@ -1,0 +1,2 @@
+ccache /usr/local/src/llvm/build/bin/llvm-ar qc libsubsys__random.a  CMakeFiles/subsys__random.dir/rand32_timestamp.c.obj
+ccache /usr/local/src/llvm/build/bin/llvm-ranlib libsubsys__random.a

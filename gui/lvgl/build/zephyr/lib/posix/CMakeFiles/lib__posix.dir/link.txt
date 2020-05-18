@@ -1,0 +1,2 @@
+ccache /usr/local/src/llvm/build/bin/llvm-ar qc liblib__posix.a  CMakeFiles/lib__posix.dir/pthread_common.c.obj
+ccache /usr/local/src/llvm/build/bin/llvm-ranlib liblib__posix.a

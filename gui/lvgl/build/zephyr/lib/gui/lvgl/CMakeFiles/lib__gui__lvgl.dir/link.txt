@@ -1,0 +1,2 @@
+ccache /usr/local/src/llvm/build/bin/llvm-ar qc liblib__gui__lvgl.a  CMakeFiles/lib__gui__lvgl.dir/lvgl_display.c.obj CMakeFiles/lib__gui__lvgl.dir/lvgl_display_mono.c.obj CMakeFiles/lib__gui__lvgl.dir/lvgl_display_16bit.c.obj CMakeFiles/lib__gui__lvgl.dir/lvgl_display_24bit.c.obj CMakeFiles/lib__gui__lvgl.dir/lvgl_display_32bit.c.obj CMakeFiles/lib__gui__lvgl.dir/lvgl.c.obj
+ccache /usr/local/src/llvm/build/bin/llvm-ranlib liblib__gui__lvgl.a
